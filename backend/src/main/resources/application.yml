@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/planup?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: test1234
+
+  jpa:
+    hibernate:
+      ddl-auto: update    # ?? ? ? DB ???? ?? ??/???
+    properties:
+      hibernate:
+        format_sql: true  # ??? SQL? ??? ???
+    show-sql: true        # ???? SQL? ??? ??
+
+  # Redis ?? (??? ??)
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+logging:
+  level:
+    org.hibernate.SQL: debug  # SQL ?? ?? ??
