@@ -1,4 +1,4 @@
-package domain.common;
+package com.planup.domain.common;
 
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;

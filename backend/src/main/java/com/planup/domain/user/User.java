@@ -1,6 +1,6 @@
-package domain.user;
+package com.planup.domain.user;
 
-import domain.common.BaseTimeEntity;
+import com.planup.domain.common.BaseTimeEntity;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -35,6 +35,9 @@ public class User extends BaseTimeEntity {
     @Column
     private String socialId; // 소셜 로그인 식별값
 
+    // 프로필 사진
+
+
     @Builder
     public User(String email, String password, String nickname, Role role, String socialType, String socialId) {
         this.email = email;
@@ -45,7 +48,7 @@ public class User extends BaseTimeEntity {
         this.socialId = socialId;
     }
 
-    // 회원정보 수정 등의 비즈니스 로직도 여기에 추가 예정
+    // TODO: 회원정보 수정 등의 비즈니스 로직도 여기에 추가 예정
     public String getRoleKey() {
         return this.role.getKey();
     }

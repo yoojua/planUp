@@ -36,7 +36,7 @@ out/
 ### VS Code ###
 .vscode/
 
-### [My Custom Rules] ###
+### 개인정보 ###
 
 # 1. 보안: DB 비밀번호가 들어있는 파일
 backend/src/main/resources/application.yml
